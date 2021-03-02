@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        Thread.sleep(forTimeInterval: 0.75) // temporary delay
         let parseConfig = ParseClientConfiguration {
                     $0.applicationId = "vuCNOhkk6JmyNfEf4ojAbOrhunu2t8TdtjsnQFfQ" // <- UPDATE
                     $0.clientKey = "lm7E4VHkczr29ZSIy4smulp9j9SQXkSv1zd3feAB" // <- UPDATE
